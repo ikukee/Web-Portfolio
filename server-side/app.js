@@ -4,7 +4,7 @@ import privateAPI from "./routes/auth.js";
 import cors from "cors";
 const app = express();
 app.use(cors({
-    origin: [],
+    origin: ["*"],
     methods: ["POST", "PATCH", "GET", "DELETE"],
     credentials: true
 }))
