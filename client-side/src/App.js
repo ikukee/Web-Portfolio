@@ -18,7 +18,7 @@ function App() {
             <Route path='/projects' element={<ProjectList/>}/>
           </Routes>
           <Routes>
-            <Route path='/projects/:id' element={<Project/>}/>
+            <Route path='/projects/i/:id' element={<Project/>}/>
           </Routes>
         </div>
       </BrowserRouter>
