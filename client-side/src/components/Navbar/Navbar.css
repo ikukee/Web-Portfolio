@@ -1,0 +1,31 @@
+#navbar{
+    display: flex;
+    justify-content: center;
+    background-color: var(--barn-red);
+    color: var(--text-white);
+    height: 3rem;
+    margin:0;
+    
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding:0;
+    margin: 0;
+    align-items: center;
+}
+#navbar ul > *{
+    padding-inline: .75rem;
+    padding-block: .25rem;
+    transition: all .1s;
+    font-weight: 500;
+    cursor: pointer;
+    width: 8rem;
+    &:hover{
+        border-bottom: 2px solid white;
+        color:white;
+        
+    }
+}
