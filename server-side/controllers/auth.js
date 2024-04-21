@@ -8,6 +8,6 @@ const login = (req,res) =>{
 }
 const updateUser = (req,res) => {
     const {} = req.body
-
+    res.status(200).json({message: "success"});
 }
 export {login,updateUser}

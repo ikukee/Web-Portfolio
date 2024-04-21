@@ -1,7 +1,7 @@
 import express from 'express'
-import { deleteProject, postProject, updateProject } from '../controllers/project'
-import { login, updateUser } from '../controllers/auth';
-import { deleteMail, index } from '../controllers/mail';
+import { deleteProject, postProject, updateProject } from '../controllers/project.js'
+import { login, updateUser } from '../controllers/auth.js';
+import { deleteMail, index } from '../controllers/mail.js';
 const router = express.Router();
 // USER
 router.post("/auth/login", login);

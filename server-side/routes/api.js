@@ -1,6 +1,6 @@
 import express from 'express'
-import { getProject, index } from '../controllers/project';
-import { postMail } from '../controllers/mail';
+import { getProject, index } from '../controllers/project.js';
+import { postMail } from '../controllers/mail.js';
 const router = express.Router();
 
 // -- public
