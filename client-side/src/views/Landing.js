@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const Landing = () => {
-  return (
+  return (<>
     <div>Landing</div>
-  )
+    </>)
 }
