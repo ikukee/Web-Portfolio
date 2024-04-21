@@ -3,11 +3,7 @@ import publicAPI from "./routes/api.js";
 import privateAPI from "./routes/auth.js";
 import cors from "cors";
 const app = express();
-app.use(cors({
-    origin: ["*"],
-    methods: ["POST", "PATCH", "GET", "DELETE"],
-    credentials: true
-}))
+
 app.use("/", (req, res) => {
     res.send("TEST")
 })
