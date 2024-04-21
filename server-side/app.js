@@ -8,6 +8,9 @@ app.use(cors({
     methods: ["POST", "PATCH", "GET", "DELETE"],
     credentials: true
 }))
+app.use("/", (req, res) => {
+    res.send("TEST")
+})
 app.use("/api/", publicAPI);
 app.use("/api/", privateAPI)
 app.listen(3000, () => {
