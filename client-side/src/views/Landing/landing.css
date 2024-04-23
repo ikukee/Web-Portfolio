@@ -1,52 +1,85 @@
-.navbar{
-
-}
-.terminal-look{
+.terminal-look {
     background-color: #0d1926;
     height: 40rem;
-    display: flex;
-    color:white;
-    border:1px solid rgba(192, 192, 192, 0.16);
+    
+    color: white;
+    border: 1px solid rgba(192, 192, 192, 0.16);
 
-    .main{
-        width: 80%;
-        text-align: left;
-        display: flex;
-        padding: 2rem
-    }
-    .sidebar{
-        display: inline-flex;
-        .side-icons{
-            background-color: #0a141e;
-            align-items: center;
+    @media (min-width:1024px) {
+        &{
+            display: flex;
         }
-        .side-icons > * {
-            padding: 10px;
-            color:silver; 
-            &:hover{
-                color:white;
+        .main {
+            width: 80%;
+            text-align: left;
+            display: flex;
+            padding: 2rem
+        }
+        .sidebar {
+            display: inline-flex;
+
+            .side-icons {
+                background-color: #0a141e;
+                align-items: center;
+            }
+
+            .side-icons>* {
+                padding: 10px;
+                color: silver;
+
+                &:hover {
+                    color: white;
+                }
+            }
+
+            .content {
+                background-color: #0c1620;
+
+                display: block;
+                border-right: 1px solid rgba(192, 192, 192, 0.16);
+                margin: 0;
+            }
+
+            .content>* {
+                text-align: left;
+                margin: 1rem;
+                padding: 5px;
+
+                &:hover {
+                    color: white;
+                }
             }
         }
-        .content{
-            background-color: #0c1620;
-            
-            display: block;
-            border-right: 1px solid rgba(192, 192, 192, 0.16);
-            margin: 0;
-        }
-        .content > * {
-            text-align: left;
-            margin: 1rem;
-            padding: 5px;
-            &:hover{
-                color:white;
-            }   
-        }
     }
 }
-.unselected{
+
+.unselected {
     color: rgba(192, 192, 192, 0.146);
 }
-.selected{
+
+.selected {
     color: white;
+}
+*{outline: 0px dashed red;}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+    .side-icons{
+        display: flex;
+        gap:1rem;
+    }
+    .side-icons > *{
+        width: 150px;
+    }
+    .sidebar .content {
+        display: flex;
+        gap: 1rem;
+    }
+    .sidebar .content > *{
+        width: 150px;
+    }
+    .main{
+        text-wrap: wrap;
+        text-align: left;
+        padding: 0;
+    }
 }

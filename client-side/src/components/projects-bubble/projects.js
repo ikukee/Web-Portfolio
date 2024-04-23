@@ -2,9 +2,9 @@ import React from 'react'
 import nocsAMS from "../../assets/nocsams.jpg"
 import "./projects.css"
 export const Projects = () => {
-
+  
   return (<>
-    <div>
+    <div class="pagination">
       <div class="item">
         <h2>NOCS AMS: Attendance Monitoring System</h2>
         <h5>January 2024 - April 2024</h5>

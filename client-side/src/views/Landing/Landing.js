@@ -16,7 +16,6 @@ export const Landing = () => {
   const [textProject, showTextProject] = useState(false);
 
   return (<>
-
     <div class="terminal-look">
       <div class="sidebar">
         <div class="side-icons">
