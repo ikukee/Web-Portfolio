@@ -18,7 +18,7 @@ export const Landing = () => {
       <div class="sidebar">
         <div class="side-icons">
           <div>
-            <i className="fa fa-user" onClick={(e)=>{showInfo(true);showProjects(false);showExperience(false)}} onMouseEnter={(e)=>showTextInfo(true)} onMouseLeave={(e)=>showTextInfo(false)} style={{ fontSize: 30 }}></i>
+            <i className="fa fa-user"  onClick={(e)=>{showInfo(true);showProjects(false);showExperience(false)}} onMouseEnter={(e)=>showTextInfo(true)} onMouseLeave={(e)=>showTextInfo(false)} style={{ fontSize: 30 }}></i>
           </div>
           <div>
             <i className="fa fa-laptop" onClick={(e)=>{showExperience(true);showProjects(false);showInfo(false)}} onMouseEnter={(e)=>showTextExp(true)} onMouseLeave={(e)=>showTextExp(false)} style={{ fontSize: 30 }}></i>
@@ -28,9 +28,9 @@ export const Landing = () => {
           </div> 
         </div>
         <div class="content">
-          <p className={textInfo || info ? "": "unselected"}>Info</p>
-          <p className={textExp || experience ?"":"unselected"}>Experiences</p>
-          <p className={textProject || projects ? "":"unselected"}>Projects</p>
+          <p className={textInfo || info ? "": "unselected"}  onClick={(e)=>{showInfo(true);showProjects(false);showExperience(false)}} onMouseEnter={(e)=>showTextInfo(true)} onMouseLeave={(e)=>showTextInfo(false)}>Info</p>
+          <p className={textExp || experience ?"":"unselected"} onClick={(e)=>{showExperience(true);showProjects(false);showInfo(false)}} onMouseEnter={(e)=>showTextExp(true)} onMouseLeave={(e)=>showTextExp(false)}>Experiences</p>
+          <p className={textProject || projects ? "":"unselected"} onClick={(e)=>{showProjects(true);showExperience(false);showInfo(false)}} onMouseEnter={(e)=>showTextProject(true)} onMouseLeave={(e)=>showTextProject(false)}>Projects</p>
         </div>
       </div>
       <div class="main">
