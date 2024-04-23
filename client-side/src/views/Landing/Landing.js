@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import red from '../../assets/red.jpg'
 import "./landing.css"
-
+import { Info } from '../../components/info';
+import { Projects } from '../../components/projects';
+import { Experience } from '../../components/experience-bubble/experience';
 import 'font-awesome/css/font-awesome.min.css';
 export const Landing = () => {
   const [info, showInfo] = useState(true)
@@ -18,13 +20,13 @@ export const Landing = () => {
       <div class="sidebar">
         <div class="side-icons">
           <div>
-            <i className="fa fa-user"  onClick={(e)=>{showInfo(true);showProjects(false);showExperience(false)}} onMouseEnter={(e)=>showTextInfo(true)} onMouseLeave={(e)=>showTextInfo(false)} style={{ fontSize: 30 }}></i>
+            <i className={`fa fa-user ${textInfo || info&& "selected"}`}  onClick={(e)=>{showInfo(true);showProjects(false);showExperience(false)}} onMouseEnter={(e)=>showTextInfo(true)} onMouseLeave={(e)=>showTextInfo(false)} style={{ fontSize: 30 }}></i>
           </div>
           <div>
-            <i className="fa fa-laptop" onClick={(e)=>{showExperience(true);showProjects(false);showInfo(false)}} onMouseEnter={(e)=>showTextExp(true)} onMouseLeave={(e)=>showTextExp(false)} style={{ fontSize: 30 }}></i>
+            <i className={`fa fa-laptop ${textExp ||experience && "selected"}`} onClick={(e)=>{showExperience(true);showProjects(false);showInfo(false)}} onMouseEnter={(e)=>showTextExp(true)} onMouseLeave={(e)=>showTextExp(false)} style={{ fontSize: 30 }}></i>
           </div>
           <div>
-            <i className="fa fa-folder-open" onClick={(e)=>{showProjects(true);showExperience(false);showInfo(false)}} onMouseEnter={(e)=>showTextProject(true)} onMouseLeave={(e)=>showTextProject(false)} style={{ fontSize: 30 }}></i>
+            <i className={`fa fa-folder-open ${textProject ||projects && "selected"}`} onClick={(e)=>{showProjects(true);showExperience(false);showInfo(false)}} onMouseEnter={(e)=>showTextProject(true)} onMouseLeave={(e)=>showTextProject(false)} style={{ fontSize: 30 }}></i>
           </div> 
         </div>
         <div class="content">
@@ -34,10 +36,15 @@ export const Landing = () => {
         </div>
       </div>
       <div class="main">
-        {info && <div>
-          <h1>ROMEO M. PANIS</h1>
-          
-          </div>}
+        {info && 
+          <Info/>
+        }
+        {experience && 
+          <Experience/>
+        }
+        {projects && 
+          <Projects/>
+        }
       </div>
     </div>
 

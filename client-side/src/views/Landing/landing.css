@@ -51,3 +51,6 @@
 .unselected{
     color: rgba(192, 192, 192, 0.146);
 }
+.selected{
+    color: white;
+}
