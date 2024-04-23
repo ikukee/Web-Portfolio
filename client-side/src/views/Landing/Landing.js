@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import red from '../../assets/red.jpg'
 import "./landing.css"
 import { Info } from '../../components/info';
-import { Projects } from '../../components/projects';
+import { Projects } from '../../components/projects-bubble/projects';
 import { Experience } from '../../components/experience-bubble/experience';
 import 'font-awesome/css/font-awesome.min.css';
 export const Landing = () => {

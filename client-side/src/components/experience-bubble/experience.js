@@ -1,7 +1,6 @@
 import React from 'react'
 import "./experience.css";
-import nocsAMS from "../../assets/nocsams.jpg"
-import { TypeAnimation } from 'react-type-animation';
+import nocsAMS from "../../assets/nocsams.jpg";
 export const Experience = () => {
     return (
         <div>
@@ -30,7 +29,6 @@ export const Experience = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

@@ -1,0 +1,20 @@
+.attached-items {
+    display: flex;
+    gap: 1rem;
+}
+.attached-items > * {
+    
+}
+.item button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 1rem;
+    &:hover{
+        border-bottom: 2px solid white;
+        border-right: 1px solid white;
+    }
+}
+*{outline: 0px dashed red;}
