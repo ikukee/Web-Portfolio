@@ -47,7 +47,7 @@ export const Info = () => {
             3100,
             'A software engineer experienced in developing web applications through NodeJS, ReactJS, and Ruby on Rails.\n  Developed MERN Stack Web Application during my internship, wrote technical documentation, and implemented coding practices and web application architectural patterns.',
             (el) => el.classList.remove(CURSOR_CLASS_NAME),
-            1000,
+            500,
             () => showCmd(true)
           ]}
           wrapper="span"
