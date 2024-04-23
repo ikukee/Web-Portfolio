@@ -1,20 +1,22 @@
 .terminal-look {
     background-color: #0d1926;
     height: 40rem;
-    
+
     color: white;
     border: 1px solid rgba(192, 192, 192, 0.16);
 
     @media (min-width:1024px) {
-        &{
+        & {
             display: flex;
         }
+
         .main {
             width: 80%;
             text-align: left;
             display: flex;
             padding: 2rem
         }
+
         .sidebar {
             display: inline-flex;
 
@@ -60,26 +62,107 @@
 .selected {
     color: white;
 }
-*{outline: 0px dashed red;}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    
-    .side-icons{
-        display: flex;
-        gap:1rem;
+    .terminal-look {
+        height: 50rem;
     }
-    .side-icons > *{
+
+    .sidebar {
+        border-bottom: 1px solid rgba(192, 192, 192, 0.16);
+
+    }
+
+    .side-icons {
+        margin-top: .5rem;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .side-icons>* {
         width: 150px;
     }
+
     .sidebar .content {
         display: flex;
         gap: 1rem;
     }
-    .sidebar .content > *{
+
+    .sidebar .content>* {
         width: 150px;
     }
-    .main{
+
+    .main {
         text-wrap: wrap;
         text-align: left;
-        padding: 0;
+    }
+
+    .main>* {
+        margin-inline: 1rem;
+    }
+
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 1024px) {
+    .terminal-look {
+        display: flex;
+        height: 50rem;
+    }
+
+    .main {
+        width: 80%;
+        text-align: left;
+        display: flex;
+        text-wrap: wrap;
+        padding: 2rem
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .sidebar {
+        display: flex;
+
+        .side-icons {
+            background-color: #0a141e;
+            align-items: center;
+        }
+
+        .side-icons>* {
+            padding: 10px;
+            color: silver;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        .content {
+            background-color: #0c1620;
+
+            display: block;
+            border-right: 1px solid rgba(192, 192, 192, 0.16);
+            margin: 0;
+        }
+
+        .content>* {
+            text-align: left;
+            margin: 1rem;
+            padding: 5px;
+
+            &:hover {
+                color: white;
+            }
+        }
     }
 }

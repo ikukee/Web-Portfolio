@@ -4,7 +4,6 @@ import "./projects.css"
 export const Projects = () => {
   
   return (<>
-    <div class="pagination">
       <div class="item">
         <h2>NOCS AMS: Attendance Monitoring System</h2>
         <h5>January 2024 - April 2024</h5>
@@ -22,6 +21,5 @@ export const Projects = () => {
         </div>
         <button onClick={(e)=>window.open("https://github.com/ikukee/NOCS_Internlogger-PUBLIC",'_blank').focus()}> View Github REPOSITORY</button>
       </div>
-    </div>
   </>)
 }
