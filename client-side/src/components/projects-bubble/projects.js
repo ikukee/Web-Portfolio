@@ -19,9 +19,6 @@ export const Projects = () => {
           <div class="item-card">
             <img src={nocsAMS} style={{ height: "250px" }} />
           </div>
-          <div class="item-card">
-            <img src={nocsAMS} style={{ height: "250px" }} />
-          </div>
         </div>
         <button onClick={(e)=>window.open("https://github.com/ikukee/NOCS_Internlogger-PUBLIC",'_blank').focus()}> View Github REPOSITORY</button>
       </div>
