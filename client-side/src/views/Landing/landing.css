@@ -1,21 +1,11 @@
-.splash-header{
-    padding: 5px;
+.terminal-look{
+    background-color: #0d1926;
+    height: 30rem;
     display: flex;
-    margin:1rem;
-    border-radius: 5px;
-    background: white;
-}
-.splash-content{
-    padding-inline: 1rem;
-    width: 100%;
-    text-align: left;
-}
-.splash-content h1{
-    font-size: 4rem;
-}
-.my_picture{
-    width: 30rem;
-    height: auto;
-}
 
-
+}
+.terminal-look .content-area > *{
+    margin: .5rem;
+    color: white;
+    display: flex;
+}
