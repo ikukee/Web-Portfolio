@@ -1,37 +1,45 @@
 import React, { useState } from 'react'
 import red from '../../assets/red.jpg'
 import "./landing.css"
-export const Landing = () => {
-  const [info, showInfo] = useState(false)
-  const [projects, showProjects] = useState(false)
-  const [contact, showContact] = useState(false)
-  const [positions, setPositions] = useState([])
-  const [counter, setCounter] = useState(0)
-  const handleClick = (x) => {
-    if (x === "info") {
-      setCounter((x) => ++x);
-      showInfo(true)
-    } else if (x === "proj") {
-      setCounter((x) => ++x);
-      showProjects(true)
-    } else if (x === "cont") {
-      setCounter((x) => ++x);
-      showContact(true)
-    }
-  }
-  return (<>
-    <div class="terminal-look">
-      <div class="content-area">
-        <p><span class="green">root@RomeoPanisII:</span><span class="blue"> ~</span>$ help</p>
-        <p>Click any of these following commands:</p>
-        <p>{counter}</p>
-        <p onClick={(e) => { handleClick("info") }}><span class="blue">Info</span></p>
-        <p onClick={(e) => { handleClick("proj") }}><span class="blue">Projects</span></p>
-        <p onClick={(e) => { handleClick("cont") }}><span class="blue">Contact_me</span></p>
-        {info && <p>TEST</p>}
-        {positions}
-      </div>
 
+import 'font-awesome/css/font-awesome.min.css';
+export const Landing = () => {
+  const [info, showInfo] = useState(true)
+  const [projects, showProjects] = useState(false)
+  const [experience, showExperience] = useState(false)
+  
+  const [textInfo, showTextInfo] = useState(false);
+  const [textExp, showTextExp] = useState(false);
+  const [textProject, showTextProject] = useState(false);
+  
+  return (<>
+    
+    <div class="terminal-look">
+      <div class="sidebar">
+        <div class="side-icons">
+          <div>
+            <i className="fa fa-user" onClick={(e)=>{showInfo(true);showProjects(false);showExperience(false)}} onMouseEnter={(e)=>showTextInfo(true)} onMouseLeave={(e)=>showTextInfo(false)} style={{ fontSize: 30 }}></i>
+          </div>
+          <div>
+            <i className="fa fa-laptop" onClick={(e)=>{showExperience(true);showProjects(false);showInfo(false)}} onMouseEnter={(e)=>showTextExp(true)} onMouseLeave={(e)=>showTextExp(false)} style={{ fontSize: 30 }}></i>
+          </div>
+          <div>
+            <i className="fa fa-folder-open" onClick={(e)=>{showProjects(true);showExperience(false);showInfo(false)}} onMouseEnter={(e)=>showTextProject(true)} onMouseLeave={(e)=>showTextProject(false)} style={{ fontSize: 30 }}></i>
+          </div> 
+        </div>
+        <div class="content">
+          <p className={textInfo || info ? "": "unselected"}>Info</p>
+          <p className={textExp || experience ?"":"unselected"}>Experiences</p>
+          <p className={textProject || projects ? "":"unselected"}>Projects</p>
+        </div>
+      </div>
+      <div class="main">
+        {info && <div>
+          <h1>ROMEO M. PANIS</h1>
+          
+          </div>}
+      </div>
     </div>
+
   </>)
 }

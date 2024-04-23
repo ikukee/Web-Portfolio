@@ -2,7 +2,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Landing } from './views/Landing/Landing';
-import { Navbar } from './components/Navbar/Navbar';
 import { Project } from './views/Project';
 import { ProjectList } from './views/ProjectList/ProjectList';
 function App() {
@@ -10,7 +9,7 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
-        <Navbar />
+        
         <div className='pages'>
           <Routes>
             <Route path='/' element={<Landing />} />
