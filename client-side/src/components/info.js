@@ -21,9 +21,8 @@ export const Info = () => {
       />
       <TypeAnimation
         sequence={[
-          2000,
+          2100,
           'A Fullstack Developer, creating robust and innovative application',
-          1000,
           (el) => el.classList.remove(CURSOR_CLASS_NAME)
         ]}
         wrapper="span"
