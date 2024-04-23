@@ -11,9 +11,8 @@
         }
 
         .main {
-            width: 80%;
+            width: 100%;
             text-align: left;
-            display: flex;
             padding: 2rem
         }
 
@@ -54,7 +53,9 @@
         }
     }
 }
-
+.main{
+    overflow-y:auto;
+}
 .unselected {
     color: rgba(192, 192, 192, 0.146);
 }
@@ -95,6 +96,9 @@
     .main {
         text-wrap: wrap;
         text-align: left;
+        overflow-y:auto;
+        max-height: 40rem;
+        width: 100%;
     }
 
     .main>* {
@@ -109,7 +113,25 @@
         object-fit: contain;
     }
 }
-
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #24476b7e; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #081c32; 
+    border: 0px solid silver;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 @media only screen and (min-device-width : 600px) and (max-device-width : 1024px) {
     .terminal-look {
         display: flex;
@@ -118,8 +140,7 @@
 
     .main {
         width: 80%;
-        text-align: left;
-        display: flex;
+        text-align: left;   
         text-wrap: wrap;
         padding: 2rem
     }
