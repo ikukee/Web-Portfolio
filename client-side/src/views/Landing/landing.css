@@ -7,11 +7,12 @@
     display: flex;
     color:white;
     border:1px solid rgba(192, 192, 192, 0.16);
+
     .main{
         width: 80%;
         text-align: left;
         display: flex;
-        padding: 5px;
+        padding: 2rem
     }
     .sidebar{
         display: inline-flex;
