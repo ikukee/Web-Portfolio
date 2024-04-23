@@ -4,31 +4,38 @@ body {
   /* background-image: url("./assets/Ubuntu-Wallpaper.webp"); */
   font-family: "Arial";
   background: black;
-};
+}
 
-*{
+
+* {
   box-sizing: border-box;
 }
-.green{
-  color:#83FF08;
+
+.green {
+  color: #83FF08;
 }
-.blue{
+
+.blue {
   color: #0883FF;
 }
+
 :root {
   /* CSS HEX */
---barn-red: #780000ff;
---fire-brick: #c1121fff;
---papaya-whip: #fdf0d5ff;
---prussian-blue: #003049ff;
---air-superiority-blue: #669bbcff;
+  --barn-red: #780000ff;
+  --fire-brick: #c1121fff;
+  --papaya-whip: #fdf0d5ff;
+  --prussian-blue: #003049ff;
+  --air-superiority-blue: #669bbcff;
 
-/* CSS HSL */
---barn-red: hsla(0, 100%, 24%, 1);
---fire-brick: hsla(356, 83%, 41%, 1);
---papaya-whip: hsla(40, 91%, 91%, 1);
---prussian-blue: hsla(201, 100%, 14%, 1);
---air-superiority-blue: hsla(203, 39%, 57%, 1);
---text-white: #ffffff;
---foreground: #efefef;
+  /* CSS HSL */
+  --barn-red: hsla(0, 100%, 24%, 1);
+  --fire-brick: hsla(356, 83%, 41%, 1);
+  --papaya-whip: hsla(40, 91%, 91%, 1);
+  --prussian-blue: hsla(201, 100%, 14%, 1);
+  --air-superiority-blue: hsla(203, 39%, 57%, 1);
+  --text-white: #ffffff;
+  --foreground: #efefef;
+
+  
 }
+

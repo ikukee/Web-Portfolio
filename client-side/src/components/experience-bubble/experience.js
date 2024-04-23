@@ -1,6 +1,7 @@
 import React from 'react'
 import "./experience.css";
 import nocsAMS from "../../assets/nocsams.jpg"
+import { TypeAnimation } from 'react-type-animation';
 export const Experience = () => {
     return (
         <div>
@@ -25,7 +26,7 @@ export const Experience = () => {
                 <p>Docker, Linux commands, NodeJS, ReactJS, Javascript, MongoDB, REST API, Web security features, Architectural patterns.</p>
                 <div class="attached-items">
                     <div class="item-card">
-                        <img src={nocsAMS} style={{height:"250px"}}/>
+                        <img src={nocsAMS} style={{ height: "250px" }} />
                     </div>
                 </div>
             </div>
