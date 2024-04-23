@@ -1,9 +1,10 @@
 import React from 'react'
 import "./experience.css";
+import nocsAMS from "../../assets/nocsams.jpg"
 export const Experience = () => {
     return (
         <div>
-            <div class="Item">
+            <div class="item">
                 <h2>Junior Fullstack and Junior System Administrator</h2>
                 <h5>January 2024 - April 2024</h5>
                 <ul>
@@ -24,7 +25,7 @@ export const Experience = () => {
                 <p>Docker, Linux commands, NodeJS, ReactJS, Javascript, MongoDB, REST API, Web security features, Architectural patterns.</p>
                 <div class="attached-items">
                     <div class="item-card">
-
+                        <img src={nocsAMS} style={{height:"250px"}}/>
                     </div>
                 </div>
             </div>

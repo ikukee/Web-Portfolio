@@ -3,37 +3,35 @@
 }
 .terminal-look{
     background-color: #0d1926;
-    height: 30rem;
+    height: 40rem;
     display: flex;
     color:white;
     border:1px solid rgba(192, 192, 192, 0.16);
     .main{
         width: 80%;
+        text-align: left;
+        display: flex;
+        padding: 5px;
     }
     .sidebar{
-        display: flex;
-        width: 20%;
-        
+        display: inline-flex;
         .side-icons{
             background-color: #0a141e;
-            
-            width: 20%;
             align-items: center;
         }
         .side-icons > * {
             padding: 10px;
             color:silver; 
-            
             &:hover{
                 color:white;
             }
         }
         .content{
             background-color: #0c1620;
-            width: 60%;
+            
             display: block;
             border-right: 1px solid rgba(192, 192, 192, 0.16);
-            
+            margin: 0;
         }
         .content > * {
             text-align: left;
@@ -44,9 +42,6 @@
             }   
         }
     }
-}
-.main{
-    text-align: left;
 }
 .unselected{
     color: rgba(192, 192, 192, 0.146);
