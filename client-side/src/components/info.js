@@ -30,7 +30,7 @@ export const Info = () => {
             (el) => el.classList.remove(CURSOR_CLASS_NAME)
           ]}
           wrapper="span"
-          speed={80}
+          speed={100}
           style={{ whiteSpace: 'pre-line', fontSize: '1em', display: 'inline-block' }}
 
 
@@ -54,7 +54,7 @@ export const Info = () => {
             
           ]}
           wrapper="span"
-          speed={60}
+          speed={100}
           style={{ whiteSpace: 'pre-line', fontSize: '2em', display: 'block' }}
 
 
@@ -72,7 +72,7 @@ export const Info = () => {
             () => showCmd(true)
           ]}
           wrapper="span"
-          speed={60}
+          speed={100}
           style={{ whiteSpace: 'pre-line', fontSize: '1em', display: 'block' }}
           repeat={Infinity}
           

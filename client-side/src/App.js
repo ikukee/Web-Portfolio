@@ -11,7 +11,7 @@ function App() {
       if (x === true) {
         setTimeout(() => {
           setloading(false)
-        }, 5000)
+        }, 2000)
 
       }
     }
