@@ -5,7 +5,8 @@ import { Landing } from './views/Landing/Landing';
 import { useEffect, useState } from 'react';
 import { LoaderTerminal } from './components/webLoad/LoaderTerminal';
 function App() {
-  const [loading, setloading] = useState(true)
+  const [loading, setloading] = useState(false)
+  const [whoami, setWhoami] = useState();
   useEffect(() => {
     const loadMeUp = (x) => {
       if (x === true) {

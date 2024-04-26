@@ -1,9 +1,7 @@
 .terminal-look {
     background-color: #0d1926;
-    height: 40rem;
-
+    height: 44rem;
     color: white;
-    border: 1px solid rgba(192, 192, 192, 0.16);
 
     @media (min-width:1024px) {
         & {
@@ -14,6 +12,7 @@
             width: 100%;
             text-align: left;
             padding: 2rem
+            
         }
 
         .sidebar {
@@ -35,9 +34,8 @@
 
             .content {
                 background-color: #0c1620;
-
+                width: 200px;
                 display: block;
-                border-right: 1px solid rgba(192, 192, 192, 0.16);
                 margin: 0;
             }
 
@@ -53,9 +51,13 @@
         }
     }
 }
-.main{
-    overflow-y:auto;
+.date-item:hover{
+    text-indent: 15px;
 }
+.main {
+    overflow-y: auto;
+}
+
 .unselected {
     color: rgba(192, 192, 192, 0.146);
 }
@@ -67,6 +69,9 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .terminal-look {
         height: 50rem;
+        .info-name{
+            font-size: 5rem;
+        }
     }
 
     .sidebar {
@@ -96,7 +101,7 @@
     .main {
         text-wrap: wrap;
         text-align: left;
-        overflow-y:auto;
+        overflow-y: auto;
         max-height: 40rem;
         width: 100%;
     }
@@ -113,25 +118,27 @@
         object-fit: contain;
     }
 }
+
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #24476b7e; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #081c32; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #24476b7e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #081c32;
     border: 0px solid silver;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 @media only screen and (min-device-width : 600px) and (max-device-width : 1024px) {
     .terminal-look {
         display: flex;
@@ -140,9 +147,12 @@
 
     .main {
         width: 80%;
-        text-align: left;   
+        text-align: left;
         text-wrap: wrap;
-        padding: 2rem
+        padding: 2rem;
+        .info-name{
+            font-size: 5rem;
+        }
     }
 
     img {

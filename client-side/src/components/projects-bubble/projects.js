@@ -7,6 +7,7 @@ import sbtf2 from "../../assets/sbtf2.jpg"
 export const Projects = () => {
   
   return (<>
+  <h1 id="2024">2024</h1>
       <div class="item">
         <h2>NOCS AMS: Attendance Monitoring System</h2>
         <h5>January 2024 - April 2024</h5>
@@ -22,7 +23,7 @@ export const Projects = () => {
             <img src={nocsAMS} style={{ height: "250px" }} />
           </div>
         </div>
-        <button onClick={(e)=>window.open("https://github.com/ikukee/NOCS_Internlogger-PUBLIC",'_blank').focus()}> View Github REPOSITORY</button>
+        <button onClick={(e)=>window.open("https://github.com/ikukee/NOCS_Internlogger-PUBLIC",'_blank').focus()}>View on Github</button>
       </div>
       <div class="item">
         <h2>SBTF: Patient Record System</h2>
@@ -41,8 +42,9 @@ export const Projects = () => {
             <img src={sbtf2} style={{ height: "250px" }} />
           </div>
         </div>
-        <button onClick={(e)=>window.open("https://github.com/ikukee/patient-records",'_blank').focus()}> View Github REPOSITORY</button>
+        <button onClick={(e)=>window.open("https://github.com/ikukee/patient-records",'_blank').focus()}>View on Github</button>
       </div>
+      <h1 id="2023">2023</h1>
       <div class="item">
         <h2>Naga E-Bakwit: Attendance Monitoring System</h2>
         <h5>August 2023 - December 2023</h5>
@@ -58,7 +60,7 @@ export const Projects = () => {
             <img src={ebakwit} style={{ height: "250px" }} />
           </div>
         </div>
-        <button onClick={(e)=>window.open("https://github.com/ikukee/E-bakwit",'_blank').focus()}> View Github REPOSITORY</button>
+        <button onClick={(e)=>window.open("https://github.com/ikukee/E-bakwit",'_blank').focus()}>View on Github</button>
       </div>
       
   </>)

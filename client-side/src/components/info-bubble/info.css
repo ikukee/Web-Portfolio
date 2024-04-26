@@ -1,0 +1,26 @@
+.info-name{
+    font-size: 8rem;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+.contact-icons{
+    display: flex;
+    gap: 2px;
+}
+.contact-icons > * {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    
+    &:hover{
+        background-color: #0c1620;
+    }
+}
+.cont{
+    font-size: 30px;
+}
