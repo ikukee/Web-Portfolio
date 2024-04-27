@@ -19,7 +19,7 @@
 
 .terminal-look {
     background-color: #0d1926;
-    height: 44rem;
+    height: 40rem;
     color: white;
 
     @media (min-width:1024px) {
