@@ -46,7 +46,7 @@ export const Projects = () => {
       </div>
       <h1 id="2023">2023</h1>
       <div class="item">
-        <h2>Naga E-Bakwit: Attendance Monitoring System</h2>
+        <h2>Naga E-Bakwit</h2>
         <h5>August 2023 - December 2023</h5>
         <p>
           Developed using Ruby on Rails | POSTGRESQL
