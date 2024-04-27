@@ -135,7 +135,7 @@
         text-wrap: wrap;
         text-align: left;
         overflow-y: auto;
-        max-height: 45rem;
+        max-height: 30rem;
         width: 100%;
     }
 
