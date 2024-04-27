@@ -2,27 +2,28 @@
     background-color: #081c32;
     align-items: center;
     display: flex;
-
-    p:first-child {
-        color: white;
-        font-size: 2rem;
-    }
-
-    .contact-icons {
-        position: static;
-    }
+    color: white;
 }
 
 .attached-items {
     display: flex;
 }
 
-.terminal-look {
-    background-color: #0d1926;
-    height: 40rem;
+.terminal-look{
     color: white;
+}
+@media (min-width:1024px) {
+    .title-bar{
+        p:first-child {
 
-    @media (min-width:1024px) {
+            font-size: 2rem;
+        }
+    }
+    .terminal-look {
+        background-color: #0d1926;
+        height: 40rem;
+        
+
         & {
             display: flex;
         }
@@ -87,8 +88,13 @@
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    body{
+    body {
         overflow: hidden;
+    }
+
+    .title-bar:first-child {
+        font-size: 1.5rem;
+
     }
     .terminal-look {
         height: 50rem;
@@ -104,7 +110,7 @@
     }
 
     .attached-items {
-        display:block;
+        display: block;
     }
 
     .side-icons {
@@ -185,6 +191,7 @@
         text-align: left;
         text-wrap: wrap;
         padding: 2rem;
+
         .info-name {
             font-size: 5rem;
         }

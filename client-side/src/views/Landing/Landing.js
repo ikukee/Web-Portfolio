@@ -18,7 +18,8 @@ export const Landing = () => {
 
   return (<>
     <div class="title-bar">
-      <p>Romeo's Portfolio</p>
+      <p class="title">Romeo's Portfolio</p>
+
       <div class="contact-icons">
         <div onClick={(e) => window.open("https://linkedin.com/in/romeo-panis-ii", '_blank').focus()}>
           <p class="cont"><i class="fa fa-linkedin"></i></p>
@@ -33,6 +34,7 @@ export const Landing = () => {
           <p class="cont"><i class="fa fa-google fa-2xl"></i></p>
         </div>
       </div>
+
     </div>
     <div class="terminal-look">
       <div class="sidebar">
