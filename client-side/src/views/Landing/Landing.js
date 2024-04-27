@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import red from '../../assets/red.jpg'
 import "./landing.css"
+import "../../components/info-bubble/info.css"
 import { Info } from '../../components/info-bubble/info';
 import { Projects } from '../../components/projects-bubble/projects';
 import { Experience } from '../../components/experience-bubble/experience';
@@ -16,7 +17,23 @@ export const Landing = () => {
   const [textProject, showTextProject] = useState(false);
 
   return (<>
-    {Info.setCMD}
+    <div class="title-bar">
+      <p>Romeo's Portfolio</p>
+      <div class="contact-icons">
+        <div onClick={(e) => window.open("https://linkedin.com/in/romeo-panis-ii", '_blank').focus()}>
+          <p class="cont"><i class="fa fa-linkedin"></i></p>
+        </div>
+        <div onClick={(e) => window.open("https://wa.me/639155939354", '_blank').focus()}>
+          <p class="cont"> <i class="fa fa-whatsapp"></i></p>
+        </div>
+        <div onClick={(e) => window.open("https://github.com/ikukee", '_blank').focus()}>
+          <p class="cont"><i class="fa fa-github"></i></p>
+        </div>
+        <div onClick={(e) => window.open("https://mail.google.com/mail/u/0/?fs=1&to=rmpanis2@gmail.com&su=&tf=cm", '_blank').focus()}>
+          <p class="cont"><i class="fa fa-google fa-2xl"></i></p>
+        </div>
+      </div>
+    </div>
     <div class="terminal-look">
       <div class="sidebar">
         <div class="side-icons">
@@ -36,9 +53,9 @@ export const Landing = () => {
           <p className={textExp || experience ? "" : "unselected"} onClick={(e) => { showExperience(true); showProjects(false); showInfo(false) }} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)}>Experiences</p>
           <p className={textProject || projects ? "" : "unselected"} onClick={(e) => { showProjects(true); showExperience(false); showInfo(false) }} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)}>Projects</p>
           {projects && <>
-            <p class="date-item" onClick={()=> window.location.href="/#2024"}>2024</p>
-            <p class="date-item" onClick={()=> window.location.href="/#2023"}>2023</p>
-            </>}
+            <p class="date-item" onClick={() => window.location.href = "/#2024"}>2024</p>
+            <p class="date-item" onClick={() => window.location.href = "/#2023"}>2023</p>
+          </>}
         </div>
       </div>
       <div class="main">

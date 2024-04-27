@@ -1,9 +1,12 @@
 .attached-items {
-    display: flex;
+  
     gap: 1rem;
 }
-.attached-items > * {
-    
+.attached-items .item-card{
+    padding: 5px;
+}
+.attached-items .item-card img {
+    border-radius: 5px;
 }
 .item button {
     background-color: black;
