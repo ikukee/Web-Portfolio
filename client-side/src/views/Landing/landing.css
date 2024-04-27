@@ -135,7 +135,7 @@
         text-wrap: wrap;
         text-align: left;
         overflow-y: auto;
-        max-height: 40rem;
+        max-height: 45rem;
         width: 100%;
     }
 
@@ -185,7 +185,6 @@
         text-align: left;
         text-wrap: wrap;
         padding: 2rem;
-
         .info-name {
             font-size: 5rem;
         }

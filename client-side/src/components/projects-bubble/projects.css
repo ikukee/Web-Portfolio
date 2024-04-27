@@ -2,9 +2,6 @@
   
     gap: 1rem;
 }
-.attached-items .item-card{
-    padding: 5px;
-}
 .attached-items .item-card img {
     border-radius: 5px;
 }
