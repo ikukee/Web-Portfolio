@@ -18,8 +18,14 @@ p{
     text-align: center;
     
     &:hover{
-        background-color: #0c1620;
+        font-size: larger;
+        border-bottom: 3px solid white;
     }
+}
+.title-bar .contact-icons {
+    position: absolute;
+    padding: 5px;
+    right: 0px;
 }
 .cont{
     font-size: 30px;

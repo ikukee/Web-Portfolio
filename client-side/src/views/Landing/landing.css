@@ -3,6 +3,7 @@
     align-items: center;
     display: flex;
     color: white;
+    padding: 5px;
 }
 
 .terminal-look {

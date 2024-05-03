@@ -23,10 +23,10 @@ export const Info = () => {
           <p class="cont"><i class="fa fa-github"></i></p>
         </div>
         <div onClick={(e) => window.open("https://mail.google.com/mail/u/0/?fs=1&to=rmpanis2@gmail.com&su=&tf=cm", '_blank').focus()}>
-        <p class="cont"><i class="fa fa-google fa-2xl"></i></p>
-        </div>  
+          <p class="cont"><i class="fa fa-google fa-2xl"></i></p>
+        </div>
       </div>
-      
+
     </>
   )
 }
