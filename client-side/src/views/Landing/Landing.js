@@ -1,6 +1,5 @@
 /* eslint-disable no-mixed-operators */
 import React, { useState } from 'react'
-import red from '../../assets/red.jpg'
 import "./landing.css"
 import "../../components/info-bubble/info.css"
 import { Info } from '../../components/info-bubble/info';
@@ -17,6 +16,7 @@ export const Landing = () => {
   const [textProject, showTextProject] = useState(false);
 
   return (<>
+  
     <div class="title-bar">
       <p class="title">Romeo's Portfolio</p>
 
@@ -36,6 +36,7 @@ export const Landing = () => {
       </div>
 
     </div>
+    
     <div class="terminal-look">
       <div class="sidebar">
         <div class="side-icons">
@@ -59,8 +60,11 @@ export const Landing = () => {
             <p class="date-item" onClick={() => window.location.href = "/#2023"}>2023</p>
           </>}
         </div>
+      
       </div>
+      
       <div class="main">
+      
         {info &&
           <Info />
         }
@@ -71,7 +75,8 @@ export const Landing = () => {
           <Projects />
         }
       </div>
+    
     </div>
-
+    
   </>)
 }
