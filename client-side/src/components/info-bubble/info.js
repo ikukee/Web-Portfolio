@@ -2,6 +2,18 @@ import React, { useState } from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import "./info.css";
 import 'font-awesome/css/font-awesome.min.css';
+import cIcon from "../../assets/c++Icon.png"
+import nodeIcon from "../../assets/nodeIcon.png"
+import jsIcon from "../../assets/jsIcon.png"
+import rubyIcon from "../../assets/rubyIcon.png"
+import python from "../../assets/python.png"
+import expressIcon from "../../assets/expressIcon.png"
+import reactIcon from "../../assets/reactIcon.png"
+import nextJSIcon from "../../assets/nextJsIcon.png"
+import rubyRails from "../../assets/rubyRailsIcon.png"
+import vscodeIcon from "../../assets/vscodeIcon.png"
+import postman from "../../assets/postman.png"
+import awsIcon from "../../assets/awsIcon.png"
 const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
 
 export const Info = () => {
@@ -26,7 +38,60 @@ export const Info = () => {
           <p class="cont"><i class="fa fa-google fa-2xl"></i></p>
         </div>
       </div>
-
+      <div class="row">
+        <div class="column">
+          <h1>Programming Languages</h1>
+          <div class="table">
+            <div class="tile">
+              <img src={cIcon} alt="c++" />
+            </div>
+            <div class="tile">
+              <img src={jsIcon} alt="javascript" />
+            </div>
+            <div class="tile">
+              <img src={python} alt="python"/>
+            </div>
+            <div class="tile">
+              <img src={rubyIcon} alt="ruby"/>
+            </div>
+          </div>
+          <h1>Frameworks</h1>
+          <div class="table">
+            <div class="tile">
+              <img src={nodeIcon} alt="nodejs"/>
+            </div>
+            <div class="tile">
+              <img src={reactIcon} alt="reactjs"/>
+            </div>
+            <div class="tile">
+              <img src={expressIcon} alt="express"/>
+            </div>
+            <div class="tile">
+              <img src={nextJSIcon} alt="nextjs" />
+            </div>
+            <div class="tile">
+              <img src={rubyRails}alt="rubyonrails" />
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <h1>Tools</h1>
+          <div class="table">
+            <div class="tile">
+              <img src={vscodeIcon} alt="vscode"/>
+            </div>
+            <div class="tile">
+              <img src={postman }  alt="postman"/>
+            </div>
+          </div>
+          <h1>Others</h1>
+          <div class="table">
+            <div class="tile">
+              <img src={awsIcon} alt="aws"/>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

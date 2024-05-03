@@ -3,6 +3,26 @@
     margin: 0;
     padding: 0;
 }
+.row{
+    display: flex;
+    gap:5px;
+    .column{
+        width: 50%;
+        padding: 5px;
+    }
+}
+.table{
+    display: flex;
+    gap:5px;
+    .tile{
+        
+        width: auto;
+        display: block;
+        padding: 5px;   
+    }
+    
+}
+
 p{
     margin: 0;
 }
