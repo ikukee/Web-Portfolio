@@ -5,13 +5,15 @@
 }
 
 .row {
+    @media only screen and (min-device-width : 1024px) {
     display: flex;
     gap: 15px;
-
+    
     .column {
         width: 50%;
         padding:15px;
     }
+}
 }
 
 .column {
@@ -66,12 +68,7 @@ p {
     }
 }
 
-.title-bar .contact-icons {
-    position: absolute;
-    padding: 5px;
-    right: 0px;
 
-}
 
 .cont {
     font-size: 30px;
