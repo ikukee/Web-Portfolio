@@ -4,6 +4,7 @@ import "./projects.css"
 import ebakwit from "../../assets/ebakwit.jpg"
 import sbtf from "../../assets/sbtf.jpg"
 import sbtf2 from "../../assets/sbtf2.jpg"
+import githubIcon from "../../assets/icons8-github.svg"
 export const Projects = () => {
   
   return (<>
@@ -23,7 +24,7 @@ export const Projects = () => {
             <img src={nocsAMS} style={{ height: "250px" }} />
           </div>
         </div>
-        <button onClick={(e)=>window.open("https://github.com/ikukee/NOCS_Internlogger-PUBLIC",'_blank').focus()}>View on Github</button>
+        <button onClick={(e)=>window.open("https://github.com/ikukee/NOCS_Internlogger-PUBLIC",'_blank').focus()}><img src={githubIcon}alt="github"/><p>View on Github</p></button>
       </div>
       <div class="item">
         <h2>SBTF: Patient Record System</h2>
@@ -42,7 +43,7 @@ export const Projects = () => {
             <img src={sbtf2} style={{ height: "250px" }} />
           </div>
         </div>
-        <button onClick={(e)=>window.open("https://github.com/ikukee/patient-records",'_blank').focus()}>View on Github</button>
+        <button onClick={(e)=>window.open("https://github.com/ikukee/patient-records",'_blank').focus()}><img src={githubIcon}alt="github"/><p>View on Github</p></button>
       </div>
       <h1 id="2023">2023</h1>
       <div class="item">
@@ -60,7 +61,7 @@ export const Projects = () => {
             <img src={ebakwit} style={{ height: "250px" }} />
           </div>
         </div>
-        <button onClick={(e)=>window.open("https://github.com/ikukee/E-bakwit",'_blank').focus()}>View on Github</button>
+        <button onClick={(e)=>window.open("https://github.com/ikukee/E-bakwit",'_blank').focus()}><img src={githubIcon}alt="github"/><p>View on Github</p></button>
       </div>
       
   </>)
