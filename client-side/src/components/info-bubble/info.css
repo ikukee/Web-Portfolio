@@ -5,10 +5,20 @@
 }
 .row{
     display: flex;
-    gap:5px;
+    gap:15px;
     .column{
         width: 50%;
         padding: 5px;
+    }
+}
+.column{
+    background-color: #0a141e;
+    background-image: url("../../assets/bgsbox.png");
+    background-size:cover;
+    border-radius: 15px;
+    transition: .2s all ease-in-out;
+    &:hover{
+        box-shadow: white 0px 0px 10px;
     }
 }
 .table{
@@ -45,7 +55,7 @@ p{
 .title-bar .contact-icons {
     position: absolute;
     padding: 5px;
-    right: 0px;
+    right: 8rem;
 }
 .cont{
     font-size: 30px;

@@ -18,7 +18,7 @@ export const Landing = () => {
   return (<>
   
     <div class="title-bar">
-      <p class="title">Romeo's Portfolio</p>
+      <p class="title">ROMEO PORTFOLIO</p>
 
       <div class="contact-icons">
         <div onClick={(e) => window.open("https://linkedin.com/in/romeo-panis-ii", '_blank').focus()}>
