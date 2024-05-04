@@ -81,7 +81,7 @@ export const Info = () => {
               <img src={vscodeIcon} alt="vscode"/>
             </div>
             <div class="tile">
-              <img src={postman }  alt="postman"/>
+              <img src={postman }  alt="postman" style={{width:"48px", height: "auto"}}/>
             </div>
           </div>
           <h1>Others</h1>

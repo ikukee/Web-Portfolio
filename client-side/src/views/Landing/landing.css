@@ -7,7 +7,10 @@
 }
 
 .terminal-look {
+    
+    /* background-image: url("../../assets/bgsbox.png"); */
     background-image: url("../../assets/svg.png");
+    background-size: cover;
 }
 
 .attached-items {
