@@ -216,6 +216,10 @@
         object-fit: contain;
 
     }
+    .date-item{
+        visibility: collapse;
+        position: absolute;
+    }
 }
 
 ::-webkit-scrollbar {
