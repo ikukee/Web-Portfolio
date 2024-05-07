@@ -87,10 +87,36 @@
         }
     }
 }
+.date-items > *{
+    outline: 1px dashed red;
+    margin-top:5px;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+    &:hover{
+        text-indent: 15px;
+    }
 
-.date-item:hover {
-    text-indent: 15px;
 }
+.date-item:nth-of-type(1){
+    
+    animation: move .5s;
+}
+.date-item:nth-of-type(2){
+    animation: move .5s;
+}
+@keyframes move {
+    from{
+        filter: blur(5px);
+        visibility: collapse;
+        transform:translateY(-100%);
+    }
+    to{
+        filter:blur(0);
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
 
 .main {
     overflow-y: auto;
@@ -147,10 +173,6 @@
 
     }
 
-    .sidebar .content .date-item {
-        visibility: collapse;
-        position: absolute;
-    }
 
     .sidebar .content>* {
         width: 150px;

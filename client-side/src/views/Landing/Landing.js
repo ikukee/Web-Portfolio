@@ -16,7 +16,7 @@ export const Landing = () => {
   const [textProject, showTextProject] = useState(false);
 
   return (<>
-  
+
     <div class="title-bar">
       <p class="title">ROMEO PORTFOLIO</p>
 
@@ -36,7 +36,7 @@ export const Landing = () => {
       </div>
 
     </div>
-    
+
     <div class="terminal-look">
       <div class="sidebar">
         <div class="side-icons">
@@ -55,16 +55,17 @@ export const Landing = () => {
           <p className={textInfo || info ? "" : "unselected"} onClick={(e) => { showInfo(true); showProjects(false); showExperience(false) }} onMouseEnter={(e) => showTextInfo(true)} onMouseLeave={(e) => showTextInfo(false)}>Info</p>
           <p className={textExp || experience ? "" : "unselected"} onClick={(e) => { showExperience(true); showProjects(false); showInfo(false) }} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)}>Experiences</p>
           <p className={textProject || projects ? "" : "unselected"} onClick={(e) => { showProjects(true); showExperience(false); showInfo(false) }} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)}>Projects</p>
-          {projects && <>
+          {projects && <div class="date-items">
             <p class="date-item" onClick={() => window.location.href = "/#2024"}>2024</p>
             <p class="date-item" onClick={() => window.location.href = "/#2023"}>2023</p>
-          </>}
+          </div>}
+
         </div>
-      
+
       </div>
-      
+
       <div class="main">
-      
+
         {info &&
           <Info />
         }
@@ -75,8 +76,8 @@ export const Landing = () => {
           <Projects />
         }
       </div>
-    
+
     </div>
-    
+
   </>)
 }
