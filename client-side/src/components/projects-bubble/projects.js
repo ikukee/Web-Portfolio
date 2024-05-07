@@ -6,10 +6,22 @@ import sbtf from "../../assets/sbtf.jpg"
 import sbtf2 from "../../assets/sbtf2.jpg"
 import githubIcon from "../../assets/icons8-github.svg"
 export const Projects = () => {
-  
+  const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry)=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }else{  
+        entry.target.classList.remove('show');
+      }
+    })
+  })
+  const hiddenItems = document.querySelectorAll('.projects');
+  hiddenItems.forEach((el)=>{
+    observer.observe(el);
+  })
   return (<>
   <h1 id="2024">2024</h1>
-      <div class="item">
+      <div class="projects">
         <h2>NOCS AMS: Attendance Monitoring System</h2>
         <h5>January 2024 - April 2024</h5>
         <p>
@@ -26,7 +38,7 @@ export const Projects = () => {
         </div>
         <button onClick={(e)=>window.open("https://github.com/ikukee/NOCS_Internlogger-PUBLIC",'_blank').focus()}><img src={githubIcon}alt="github"/><p>View on Github</p></button>
       </div>
-      <div class="item">
+      <div class="projects">
         <h2>SBTF: Patient Record System</h2>
         <h5>Apri 2024 - April 2024</h5>
         <p>
@@ -46,7 +58,7 @@ export const Projects = () => {
         <button onClick={(e)=>window.open("https://github.com/ikukee/patient-records",'_blank').focus()}><img src={githubIcon}alt="github"/><p>View on Github</p></button>
       </div>
       <h1 id="2023">2023</h1>
-      <div class="item">
+      <div class="projects">
         <h2>Naga E-Bakwit</h2>
         <h5>August 2023 - December 2023</h5>
         <p>
