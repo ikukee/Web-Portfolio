@@ -14,9 +14,14 @@
         background-color:none;
     }
 }
-.bgBreath{
+.bg1.bgBreath{
     background-size: cover;
     background-image: url("../../assets/bgsbox.png");
+    animation: breath 3s ease-in-out infinite;
+}
+.bg2.bgBreath{
+    background-size: cover;
+    background-image: url("../../assets/bgsbox2.png");
     animation: breath 3s ease-in-out infinite;
 }
 .row {
