@@ -25,7 +25,7 @@ export const Info = () => {
   return (
     <>
 
-      <p class="info-name">ROMEO PANIS II</p>
+      <p class="info-name bgBreath" >ROMEO PANIS II</p>
       <p>Continous Learning and Continous Development</p>
       <h3>CONTACT:</h3>
       <div class="contact-icons">
@@ -42,7 +42,7 @@ export const Info = () => {
           <p class="cont"><i class="fa fa-google fa-2xl"></i></p>
         </div>
       </div>
-      <div class="row">
+      <div class="row bgBreath">
         <div class="column">
           <h1>Programming Languages</h1>
           <div class="table">
