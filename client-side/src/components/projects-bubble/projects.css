@@ -28,6 +28,12 @@
     color: black;
     display: flex;
     align-items: center;
-    gap:5px
+    gap:5px;
+    height:50px;
+    width: 150px;
+}
+.projects button img{
+    height: 48px;
+    width: 48px;
 }
 
