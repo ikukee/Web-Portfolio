@@ -3,27 +3,7 @@
     margin: 0;
     padding: 0;
 }
-@keyframes breath {
-    0%{
-        background-color:none;
-    }
-    50%{
-        background-color:black;
-    }
-    100%{
-        background-color:none;
-    }
-}
-.bg1.bgBreath{
-    background-size: cover;
-    background-image: url("../../assets/bgsbox.png");
-    animation: breath 3s ease-in-out infinite;
-}
-.bg2.bgBreath{
-    background-size: cover;
-    background-image: url("../../assets/bgsbox2.png");
-    animation: breath 3s ease-in-out infinite;
-}
+
 .row {
     padding: 5px;
     
