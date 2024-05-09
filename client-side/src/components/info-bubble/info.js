@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
-import { TypeAnimation } from 'react-type-animation';
+import React from 'react'
 import "./info.css";
 import 'font-awesome/css/font-awesome.min.css';
 import cIcon from "../../assets/c++Icon.png"
+import postgres from "../../assets/postgres.png"
+import mysql from "../../assets/mysql.png"
+import firebase from "../../assets/firebase.png"
+import vue from "../../assets/icons8-vue-js-48.png"
+import mongodb from "../../assets/mongodb.png"
 import nodeIcon from "../../assets/nodeIcon.png"
 import jsIcon from "../../assets/jsIcon.png"
 import rubyIcon from "../../assets/rubyIcon.png"
@@ -72,6 +76,9 @@ export const Info = () => {
             <div class="tile">
               <img src={rubyRails}alt="rubyonrails" />
             </div>
+            <div class="tile">
+              <img src={vue}alt="vue" />
+            </div>
           </div>
         </div>
         <div class="column">
@@ -88,6 +95,18 @@ export const Info = () => {
           <div class="table">
             <div class="tile">
               <img src={awsIcon} alt="aws"/>
+            </div>
+            <div class="tile">
+              <img src={mongodb} alt="mongodb"/>
+            </div>
+            <div class="tile">
+              <img src={mysql} alt="mysql"/>
+            </div>
+            <div class="tile">
+              <img src={postgres} alt="postgres"/>
+            </div>
+            <div class="tile">
+              <img src={firebase} alt="firebase"/>
             </div>
           </div>
         </div>
