@@ -1,12 +1,60 @@
 .info-name {
-    font-size: 8rem;
+
     margin: 0;
     padding: 0;
+
+
+}
+
+.my-pic {
+    height: 10px;
+    width: auto;
+    border-radius: 15rem;
+    margin: auto;
+    display: block;
+}
+
+@media only screen and (min-device-width : 1024px) {
+    .info-name {
+        font-size: 7rem;
+        text-align: center;
+    }
+    .my-pic{
+        height: 15rem;
+    }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 1023px) {
+    .info-name {
+        font-size: 5.5rem;
+        text-align: center;
+
+        * {
+            display: block;
+        }
+    }
+    .my-pic{
+        height: 13rem;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .info-name {
+        font-size: 3rem;
+        text-align: center;
+
+        * {
+            display: block;
+        }
+    }
+    .my-pic{
+        height: 8rem;
+    }
 }
 
 .row {
     padding: 5px;
-    
+
 
     @media only screen and (min-device-width : 1024px) {
         display: flex;
@@ -23,13 +71,13 @@
     transition: .2s all ease-in-out;
 
 
-    
+
 
 
     .tile {
         padding: 5px;
         transition: all .2s ease-in-out;
-        
+
         img {
             align-content: center;
             align-self: center;

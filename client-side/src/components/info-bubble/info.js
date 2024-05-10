@@ -20,29 +20,31 @@ import postman from "../../assets/postman.png"
 import awsIcon from "../../assets/awsIcon.png"
 import docker from "../../assets/docker.png"
 import webpack from "../../assets/webpack.png"
-const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
-
+import me from "../../assets/me.jpg"
 export const Info = () => {
-
   return (
     <>
-        <p class="info-name" >ROMEO PANIS II</p>
-        <p>Continous Learning and Continous Development</p>
-        <h3>CONTACT:</h3>
-        <div class="contact-icons">
-          <div onClick={(e) => window.open("https://linkedin.com/in/romeo-panis-ii", '_blank').focus()}>
-            <p class="cont"><i class="fa fa-linkedin"></i></p>
-          </div>
-          <div onClick={(e) => window.open("https://wa.me/639155939354", '_blank').focus()}>
-            <p class="cont"> <i class="fa fa-whatsapp"></i></p>
-          </div>
-          <div onClick={(e) => window.open("https://github.com/ikukee", '_blank').focus()}>
-            <p class="cont"><i class="fa fa-github"></i></p>
-          </div>
-          <div onClick={(e) => window.open("https://mail.google.com/mail/u/0/?fs=1&to=rmpanis2@gmail.com&su=&tf=cm", '_blank').focus()}>
-            <p class="cont"><i class="fa fa-google fa-2xl"></i></p>
-          </div>
+      <div class="info-head">
+      <img src={me} alt="me.png" class="my-pic" />
+        <p class="info-name" ><span>ROMEO</span> <span>PANIS II</span></p>
+        
+      </div>
+      <p style={{ fontSize: "1.2rem", fontStyle: "italic", textAlign: "center" }}>Continous Learning and Continous Development</p>
+      <h3>CONTACT:</h3>
+      <div class="contact-icons">
+        <div onClick={(e) => window.open("https://linkedin.com/in/romeo-panis-ii", '_blank').focus()}>
+          <p class="cont"><i class="fa fa-linkedin"></i></p>
         </div>
+        <div onClick={(e) => window.open("https://wa.me/639155939354", '_blank').focus()}>
+          <p class="cont"> <i class="fa fa-whatsapp"></i></p>
+        </div>
+        <div onClick={(e) => window.open("https://github.com/ikukee", '_blank').focus()}>
+          <p class="cont"><i class="fa fa-github"></i></p>
+        </div>
+        <div onClick={(e) => window.open("https://mail.google.com/mail/u/0/?fs=1&to=rmpanis2@gmail.com&su=&tf=cm", '_blank').focus()}>
+          <p class="cont"><i class="fa fa-google fa-2xl"></i></p>
+        </div>
+      </div>
       <div class="row">
         <div class="column">
           <h1>Programming Languages</h1>
@@ -92,7 +94,7 @@ export const Info = () => {
               <img src={postman} alt="postman" style={{ width: "48px", height: "auto" }} />
             </div>
             <div class="tile">
-              <img src={docker} alt="docker"/>
+              <img src={docker} alt="docker" />
             </div>
           </div>
           <h1>Others</h1>
@@ -112,9 +114,9 @@ export const Info = () => {
             <div class="tile">
               <img src={firebase} alt="firebase" />
             </div>
-            
+
             <div class="tile">
-              <img src={webpack} alt="webpack"/>
+              <img src={webpack} alt="webpack" />
             </div>
           </div>
         </div>

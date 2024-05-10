@@ -176,9 +176,7 @@
     .terminal-look {
         height: 50rem;
 
-        .info-name {
-            font-size: 5rem;
-        }
+        
     }
 
     .sidebar {
@@ -286,10 +284,6 @@
         text-align: left;
         text-wrap: wrap;
         padding: 2rem;
-
-        .info-name {
-            font-size: 5rem;
-        }
     }
 
     img {
