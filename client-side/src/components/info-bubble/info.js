@@ -58,7 +58,7 @@ export const Info = () => {
               <img src={rubyIcon} alt="ruby" />
             </div>
           </div>
-          <h1>Frameworks</h1>
+          <h1>Stacks</h1>
           <div class="table">
             <div class="tile">
               <img src={nodeIcon} alt="nodejs" />
