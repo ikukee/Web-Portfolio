@@ -19,14 +19,11 @@
 
 }
 
-<<<<<<< HEAD
-=======
 .column {
     transition: .2s all ease-in-out;
 
-
+}
     
->>>>>>> parent of 28eaa4c (add face and media queries and ux)
 
 
 .table {
@@ -36,11 +33,8 @@
         width: auto;
         display: block;
         padding: 5px;
-<<<<<<< HEAD
-=======
         transition: all .2s ease-in-out;
         
->>>>>>> parent of 28eaa4c (add face and media queries and ux)
         img {
             align-content: center;
             align-self: center;

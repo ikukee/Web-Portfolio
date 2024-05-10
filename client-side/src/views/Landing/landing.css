@@ -183,9 +183,6 @@ body {
 
     }
 
-<<<<<<< HEAD
-   
-=======
     .terminal-look {
         height: 50rem;
 
@@ -193,7 +190,6 @@ body {
             font-size: 5rem;
         }
     }
->>>>>>> parent of 28eaa4c (add face and media queries and ux)
 
     .sidebar {
         padding: 5px;
