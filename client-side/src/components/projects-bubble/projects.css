@@ -1,20 +1,26 @@
-.projects{
+.projects {
 
     padding: 30px;
     margin-bottom: 15px;
     opacity: 0;
     transition: all 2s ease-in-out;
 }
-.show{
+
+.show {
     opacity: 1;
 }
+
+@media (min-device-width : 1024px) {
+    .attached-items {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
 .attached-items {
-  
-    gap: 1rem;
+    display: block;
 }
-.attached-items .item-card img {
-    border-radius: 5px;
-}
+
 .projects button {
     background-color: white;
     color: black;
@@ -28,12 +34,12 @@
     color: black;
     display: flex;
     align-items: center;
-    gap:5px;
-    height:50px;
+    gap: 5px;
+    height: 50px;
     width: 150px;
 }
-.projects button img{
+
+.projects button img {
     height: 48px;
     width: 48px;
 }
-
