@@ -18,6 +18,8 @@ import rubyRails from "../../assets/rubyRailsIcon.png"
 import vscodeIcon from "../../assets/vscodeIcon.png"
 import postman from "../../assets/postman.png"
 import awsIcon from "../../assets/awsIcon.png"
+import docker from "../../assets/docker.png"
+import webpack from "../../assets/webpack.png"
 const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
 
 export const Info = () => {
@@ -89,6 +91,9 @@ export const Info = () => {
             <div class="tile">
               <img src={postman} alt="postman" style={{ width: "48px", height: "auto" }} />
             </div>
+            <div class="tile">
+              <img src={docker} alt="docker"/>
+            </div>
           </div>
           <h1>Others</h1>
           <div class="table">
@@ -106,6 +111,10 @@ export const Info = () => {
             </div>
             <div class="tile">
               <img src={firebase} alt="firebase" />
+            </div>
+            
+            <div class="tile">
+              <img src={webpack} alt="webpack"/>
             </div>
           </div>
         </div>
