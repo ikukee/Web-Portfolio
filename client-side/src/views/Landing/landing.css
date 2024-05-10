@@ -214,7 +214,7 @@
         text-wrap: wrap;
         text-align: left;
         overflow-y: auto;
-        max-height: 40rem;
+        max-height: 35rem;
         width: 100%;
     }
 
