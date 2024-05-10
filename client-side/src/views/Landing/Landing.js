@@ -76,9 +76,9 @@ export const Landing = () => {
         </div>
 
       </div>
-
+      
       <div class="main">
-
+        <div class="main-content">
         {info &&
           <Info />
         }
@@ -88,6 +88,7 @@ export const Landing = () => {
         {projects &&
           <Projects />
         }
+        </div>
       </div>
 
     </div>

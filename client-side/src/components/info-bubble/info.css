@@ -67,17 +67,15 @@
 
 }
 
-.column {
-    transition: .2s all ease-in-out;
 
 
-
-
-
+.table {
+    display: flex;
+    gap: 5px;
     .tile {
+        width: auto;
+        display: block;
         padding: 5px;
-        transition: all .2s ease-in-out;
-
         img {
             align-content: center;
             align-self: center;
@@ -85,18 +83,6 @@
             width: auto;
 
         }
-    }
-}
-
-.table {
-    display: inline-flex;
-    gap: 5px;
-
-    .tile {
-
-        width: auto;
-        display: block;
-        padding: 5px;
     }
 
 }
