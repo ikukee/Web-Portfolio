@@ -45,28 +45,29 @@
 
 }
 
-
-
 .table {
-    display: flex;
-    gap: 5px;
-
-    .tile {
-        width: auto;
-        display: block;
-        padding: 5px;
-        transition: all .2s ease-in-out;
-
-        img {
-            align-content: center;
-            align-self: center;
-            height: 50px;
-            width: auto;
-
-        }
-    }
-
+    /* No need for flex layout */
 }
+
+.tile {
+    display: inline-block; /* Display tiles inline */
+    margin-inline: 2px;
+    transition: all .2s ease-in-out;
+    box-sizing: border-box; /* Include padding in width calculation */
+
+    img {
+        align-content: center;
+        align-self: center;
+        height: 50px;
+        width: auto;
+    }
+}
+
+/* Add break after every 4th .tile */
+.tile:nth-child(4n) {
+    margin-right: 0; /* Remove right margin for the last tile in the row */
+}
+
 
 p {
     margin: 0;

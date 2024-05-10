@@ -88,7 +88,7 @@ export const Info = () => {
               <img src={vscodeIcon} alt="vscode" />
             </div>
             <div class="tile">
-              <img src={postman} alt="postman" style={{ width: "48px", height: "auto" }} />
+              <img src={postman} alt="postman" style={{ width: "50px", height: "50px" }} />
             </div>
             <div class="tile">
               <img src={docker} alt="docker"/>
