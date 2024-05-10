@@ -183,7 +183,17 @@ body {
 
     }
 
+<<<<<<< HEAD
    
+=======
+    .terminal-look {
+        height: 50rem;
+
+        .info-name {
+            font-size: 5rem;
+        }
+    }
+>>>>>>> parent of 28eaa4c (add face and media queries and ux)
 
     .sidebar {
         padding: 5px;
@@ -281,6 +291,10 @@ body {
         text-align: left;
         text-wrap: wrap;
         padding: 2rem;
+
+        .info-name {
+            font-size: 5rem;
+        }
     }
 
     img {
