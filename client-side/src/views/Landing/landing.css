@@ -30,14 +30,6 @@
     overflow-y: auto;
 }
 
-.unselected {
-    color: rgba(192, 192, 192, 0.146);
-}
-
-.selected {
-    color: white;
-}
-
 .attached-items {
     display: flex;
 }
@@ -49,7 +41,17 @@
 .content {
     background-color: #041220;
 }
+p.selected {
+    text-indent: 15px;
+    background-color: #0a141e;
+    border-left: 2px solid white;
+    color: white;
+}
 
+.selected {
+    /* color: white; */
+    
+}
 /* DESKTOP */
 @media (min-width:1024px) {
     .main {
@@ -146,13 +148,6 @@
 
             .content p {
                 transition: all .2s ease-in-out;
-
-                &:hover {
-                    text-indent: 15px;
-                    background-color: #0a141e;
-                    border-left: 2px solid white;
-                    color: white;
-                }
             }
         }
     }

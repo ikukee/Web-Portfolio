@@ -15,7 +15,20 @@ export const Landing = () => {
   const [textInfo, showTextInfo] = useState(false);
   const [textExp, showTextExp] = useState(false);
   const [textProject, showTextProject] = useState(false);
-
+  const navigation_action = (i) => {
+    switch (i) {
+      case 1:
+        showInfo(true); showProjects(false); showExperience(false)
+        break;
+      case 2:
+        showExperience(true); showProjects(false); showInfo(false)
+        break;
+      case 3:
+        showProjects(true); showExperience(false); showInfo(false)
+        break;
+      default:
+    }
+  }
   return (<>
 
     <div class="title-bar">
@@ -43,24 +56,23 @@ export const Landing = () => {
         <div class="side-icons">
           <div>
 
-            <i className={`fa fa-user ${textInfo || info && "selected"}`} onClick={(e) => { showInfo(true); showProjects(false); showExperience(false) }} onMouseEnter={(e) => showTextInfo(true)} onMouseLeave={(e) => showTextInfo(false)} style={{ fontSize: 30 }}></i>
+            <i className={`fa fa-user ${textInfo || info && "selected"}`} onClick={(e) => { navigation_action(1) }} onMouseEnter={(e) => showTextInfo(true)} onMouseLeave={(e) => showTextInfo(false)} style={{ fontSize: 30 }}></i>
           </div>
           <div>
-            <i className={`fa fa-laptop ${textExp || experience && "selected"}`} onClick={(e) => { showExperience(true); showProjects(false); showInfo(false) }} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)} style={{ fontSize: 30 }}></i>
+            <i className={`fa fa-laptop ${textExp || experience && "selected"}`} onClick={(e) => { navigation_action(2) }} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)} style={{ fontSize: 30 }}></i>
           </div>
           <div>
-            <i className={`fa fa-folder-open ${textProject || projects && "selected"}`} onClick={(e) => { showProjects(true); showExperience(false); showInfo(false) }} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)} style={{ fontSize: 30 }}></i>
+            <i className={`fa fa-folder-open ${textProject || projects && "selected"}`} onClick={(e) => { navigation_action(3) }} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)} style={{ fontSize: 30 }}></i>
           </div>
         </div>
         <div class="content">
-          <p className={textInfo || info ? "" : "unselected"} onClick={(e) => { showInfo(true); showProjects(false); showExperience(false) }} onMouseEnter={(e) => showTextInfo(true)} onMouseLeave={(e) => showTextInfo(false)}>Info</p>
-          <p className={textExp || experience ? "" : "unselected"} onClick={(e) => { showExperience(true); showProjects(false); showInfo(false) }} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)}>Experiences</p>
-          <p className={textProject || projects ? "" : "unselected"} onClick={(e) => { showProjects(true); showExperience(false); showInfo(false) }} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)}>Projects</p>
+          <p className={textInfo || info ? "selected" : ""} onClick={(e) => { navigation_action(1) }} onMouseEnter={(e) => showTextInfo(true)} onMouseLeave={(e) => showTextInfo(false)} >Info</p>
+          <p className={textExp || experience ? "selected" : ""} onClick={(e) => { navigation_action(2)}} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)} >Experiences</p>
+          <p className={textProject || projects ? "selected" : ""} onClick={(e) => { navigation_action(3)}} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)}>Projects</p>
           {projects && <div class="date-items">
             <p class="date-item" onClick={() => window.location.href = "/#2024"}>2024</p>
             <p class="date-item" onClick={() => window.location.href = "/#2023"}>2023</p>
           </div>}
-
         </div>
 
       </div>
