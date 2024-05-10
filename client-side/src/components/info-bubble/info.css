@@ -1,12 +1,33 @@
 .info-name {
-    font-size: 8rem;
+
     margin: 0;
     padding: 0;
+
+    @media only screen and (min-device-width : 1024px) {
+        font-size: 8rem;
+        display: flex;
+    }
+
+    @media only screen and (min-device-width : 600px) and (max-device-width : 1023px) {
+        font-size: 6.5rem;
+        text-align: center;
+        * {
+            display: block;
+        }
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width : 599px) {
+        font-size: 4.5rem;
+        text-align: center;
+        *{
+            display: block;
+        }
+    }
 }
 
 .row {
     padding: 5px;
-    
+
 
     @media only screen and (min-device-width : 1024px) {
         display: flex;
@@ -23,18 +44,19 @@
     transition: .2s all ease-in-out;
 
 }
-    
+
 
 
 .table {
     display: flex;
     gap: 5px;
+
     .tile {
         width: auto;
         display: block;
         padding: 5px;
         transition: all .2s ease-in-out;
-        
+
         img {
             align-content: center;
             align-self: center;

@@ -20,13 +20,12 @@ import postman from "../../assets/postman.png"
 import awsIcon from "../../assets/awsIcon.png"
 import docker from "../../assets/docker.png"
 import webpack from "../../assets/webpack.png"
-const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
 
 export const Info = () => {
 
   return (
     <>
-        <p class="info-name" >ROMEO PANIS II</p>
+        <p class="info-name" ><span>ROMEO</span> <span>PANIS II</span></p>
         <p>Continous Learning and Continous Development</p>
         <h3>CONTACT:</h3>
         <div class="contact-icons">
