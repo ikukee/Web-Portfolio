@@ -7,10 +7,16 @@
 }
 
 
-p.selected {
+.sidebar .content p.selected {
     transition: all .2s linear;
     @media (min-device-width: 600px) {
-        animation: slideColor .2s linear forwards;
+        animation: slideColor .2s linear forwards ;
+    }
+}
+.sidebar .content p.unselected {
+    transition: all 5s linear;
+    @media (min-device-width: 600px) {
+        animation: slideOutColor .2s linear forwards;
     }
 }
 
@@ -40,7 +46,35 @@ p.selected {
         background: linear-gradient(90deg, rgba(182, 40, 222, 1) 30%, rgba(4, 18, 32, 1) 100%);
     }
 }
-
+@keyframes slideOutColor {
+    0% {
+        background: rgb(182, 40, 222);
+        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 25%, rgba(4, 18, 32, 1) 80%);
+    }
+    20% {
+        
+        background: rgb(182, 40, 222);
+        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 30%, rgba(4, 18, 32, 1) 100%);
+    }
+    40% {
+        background: rgb(182, 40, 222);
+        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 20%, rgba(4, 18, 32, 1) 60%);
+    }
+    60% {
+        
+        background: rgb(182, 40, 222);
+        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 15%, rgba(4, 18, 32, 1) 40%);
+    }
+    80% {
+        
+        background: rgb(182, 40, 222);
+        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 10%, rgba(4, 18, 32, 1) 20%);
+    }
+    100% {
+        
+        background:none;
+    }
+}
 
 
 .logo {

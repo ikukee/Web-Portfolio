@@ -83,19 +83,19 @@ export const Landing = () => {
         <div class="side-icons">
           <div>
 
-            <i className={`fa fa-user ${textInfo || info && "selected"}`} onClick={(e) => { navigation_action(1) }} onMouseEnter={(e) => showTextInfo(true)} onMouseLeave={(e) => showTextInfo(false)} style={{ fontSize: 30 }}></i>
+            <i className={`fa fa-user ${textInfo || info ? "selected" : ""}`} onClick={(e) => { navigation_action(1) }} onMouseEnter={(e) => showTextInfo(true)} onMouseLeave={(e) => showTextInfo(false)} style={{ fontSize: 30 }}></i>
           </div>
           <div>
-            <i className={`fa fa-laptop ${textExp || experience && "selected"}`} onClick={(e) => { navigation_action(2) }} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)} style={{ fontSize: 30 }}></i>
+            <i className={`fa fa-laptop ${textExp || experience? "selected" : ""}`} onClick={(e) => { navigation_action(2) }} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)} style={{ fontSize: 30 }}></i>
           </div>
           <div>
-            <i className={`fa fa-folder-open ${textProject || projects && "selected"}`} onClick={(e) => { navigation_action(3) }} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)} style={{ fontSize: 30 }}></i>
+            <i className={`fa fa-folder-open ${textProject || projects? "selected" : ""}`} onClick={(e) => { navigation_action(3) }} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)} style={{ fontSize: 30 }}></i>
           </div>
         </div>
         <div class="content">
-          <p className={textInfo || info ? "selected" : ""} onClick={(e) => { navigation_action(1) }} onMouseEnter={(e) => showTextInfo(true)} onMouseLeave={(e) => showTextInfo(false)} >Info</p>
-          <p className={textExp || experience ? "selected" : ""} onClick={(e) => { navigation_action(2) }} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)} >Experiences</p>
-          <p className={textProject || projects ? "selected" : ""} onClick={(e) => { navigation_action(3) }} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)}>Projects</p>
+          <p className={textInfo || info ? "selected" : "unselected"} onClick={(e) => { navigation_action(1) }} onMouseEnter={(e) => showTextInfo(true)} onMouseLeave={(e) => showTextInfo(false)} >Info</p>
+          <p className={textExp || experience? "selected" : "unselected"} onClick={(e) => { navigation_action(2) }} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)} >Experiences</p>
+          <p className={textProject || projects ? "selected" : "unselected"} onClick={(e) => { navigation_action(3) }} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)}>Projects</p>
           {projects && <div class="date-items">
             <p class="date-item" onClick={() => window.location.href = "/#2024"}>2024</p>
             <p class="date-item" onClick={() => window.location.href = "/#2023"}>2023</p>
