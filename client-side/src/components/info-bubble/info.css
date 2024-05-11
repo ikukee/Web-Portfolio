@@ -44,11 +44,6 @@
     transition: .2s all ease-in-out;
 
 }
-
-.table {
-    /* No need for flex layout */
-}
-
 .tile {
     display: inline-block; /* Display tiles inline */
     margin-inline: 2px;

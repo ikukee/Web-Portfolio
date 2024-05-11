@@ -1,5 +1,5 @@
 /* eslint-disable no-mixed-operators */
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./landing.css"
 import "../../components/info-bubble/info.css"
 import { Info } from '../../components/info-bubble/info';
@@ -15,20 +15,47 @@ export const Landing = () => {
   const [textInfo, showTextInfo] = useState(false);
   const [textExp, showTextExp] = useState(false);
   const [textProject, showTextProject] = useState(false);
+  const [arrowVisible, setArrowVisible] = useState(true);
   const navigation_action = (i) => {
     switch (i) {
       case 1:
-        showInfo(true); showProjects(false); showExperience(false)
+        showInfo(true); showProjects(false); showExperience(false);
+        setArrowVisible(true)
         break;
       case 2:
-        showExperience(true); showProjects(false); showInfo(false)
+        showExperience(true); showProjects(false); showInfo(false);
+        setArrowVisible(true);
         break;
       case 3:
-        showProjects(true); showExperience(false); showInfo(false)
+        showProjects(true); showExperience(false); showInfo(false);
+        setArrowVisible(true);
         break;
       default:
     }
   }
+  useEffect(() => {
+    const handleScroll = () => {
+      const container = document.querySelector('.main');
+      const scrollPosition = container.scrollTop;
+
+      // Adjust this value as needed
+      const threshold =
+        container.scrollHeight - container.clientHeight - 200; // 20px above the bottom of the container
+
+      if (scrollPosition >= threshold) {
+        setArrowVisible(false);
+      } else {
+        setArrowVisible(true);
+      }
+    };
+    handleScroll();
+    const container = document.querySelector('.main');
+    container.addEventListener('scroll', handleScroll);
+
+    return () => {
+      container.removeEventListener('scroll', handleScroll);
+    };
+  }, [info,projects,experience]);
   return (<>
 
     <div class="title-bar">
@@ -67,8 +94,8 @@ export const Landing = () => {
         </div>
         <div class="content">
           <p className={textInfo || info ? "selected" : ""} onClick={(e) => { navigation_action(1) }} onMouseEnter={(e) => showTextInfo(true)} onMouseLeave={(e) => showTextInfo(false)} >Info</p>
-          <p className={textExp || experience ? "selected" : ""} onClick={(e) => { navigation_action(2)}} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)} >Experiences</p>
-          <p className={textProject || projects ? "selected" : ""} onClick={(e) => { navigation_action(3)}} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)}>Projects</p>
+          <p className={textExp || experience ? "selected" : ""} onClick={(e) => { navigation_action(2) }} onMouseEnter={(e) => showTextExp(true)} onMouseLeave={(e) => showTextExp(false)} >Experiences</p>
+          <p className={textProject || projects ? "selected" : ""} onClick={(e) => { navigation_action(3) }} onMouseEnter={(e) => showTextProject(true)} onMouseLeave={(e) => showTextProject(false)}>Projects</p>
           {projects && <div class="date-items">
             <p class="date-item" onClick={() => window.location.href = "/#2024"}>2024</p>
             <p class="date-item" onClick={() => window.location.href = "/#2023"}>2023</p>
@@ -76,20 +103,20 @@ export const Landing = () => {
         </div>
 
       </div>
-      
-      <div class="main">
-        {info &&
-          <Info />
-        }
-        {experience &&
-          <Experience />
-        }
-        {projects &&
-          <Projects />
-        }
-        </div>
+
+      <div class="main" >
+        {info && <Info />}
+        {experience && <Experience />}
+        {projects && <Projects />}
+        <svg className={`arrows ${arrowVisible ? '' : 'hidden'}`}>
+          <path className="a1" d="M0 0 L30 32 L60 0"></path>
+          <path className="a2" d="M0 20 L30 52 L60 20"></path>
+          <path className="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+      </div>
 
     </div>
 
   </>)
+
 }
