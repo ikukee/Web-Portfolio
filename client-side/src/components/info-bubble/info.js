@@ -28,7 +28,7 @@ export const Info = () => {
       
 
       <p class="info-name" ><span>ROMEO</span> <span>PANIS II</span></p>
-      <p>Continous Learning and Continous Development</p>
+      <p class="desc">Continous Learning and Continous Development</p>
       <h3>CONTACT:</h3>
       <div class="contact-icons">
         <div onClick={(e) => window.open("https://linkedin.com/in/romeo-panis-ii", '_blank').focus()}>

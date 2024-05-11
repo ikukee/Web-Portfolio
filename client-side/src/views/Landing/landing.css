@@ -9,12 +9,15 @@
 
 .sidebar .content p.selected {
     transition: all .2s linear;
+
     @media (min-device-width: 600px) {
-        animation: slideColor .2s linear forwards ;
+        animation: slideColor .2s linear forwards;
     }
 }
+
 .sidebar .content p.unselected {
     transition: all 5s linear;
+
     @media (min-device-width: 600px) {
         animation: slideOutColor .2s linear forwards;
     }
@@ -22,57 +25,69 @@
 
 @keyframes slideColor {
     0% {
-        background: rgb(182, 40, 222);
-        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 5%, rgba(4, 18, 32, 1) 0%);
+        background: rgb(86, 0, 134);
+        background: linear-gradient(90deg, rgba(86, 0, 134, 1) 5%, rgba(4, 18, 32, 1) 0%);
     }
+
     20% {
-        background: rgb(182, 40, 222);
-        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 10%, rgba(4, 18, 32, 1) 20%);
+        background: rgb(86, 0, 134);
+        background: linear-gradient(90deg, rgba(86, 0, 134, 1) 10%, rgba(4, 18, 32, 1) 20%);
     }
+
     40% {
-        background: rgb(182, 40, 222);
-        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 15%, rgba(4, 18, 32, 1) 40%);
+        background: rgb(86, 0, 134);
+        background: linear-gradient(90deg, rgba(86, 0, 134, 1) 15%, rgba(4, 18, 32, 1) 40%);
     }
+
     60% {
-        background: rgb(182, 40, 222);
-        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 20%, rgba(4, 18, 32, 1) 60%);
+        background: rgb(86, 0, 134);
+        background: linear-gradient(90deg, rgba(86, 0, 134, 1) 20%, rgba(4, 18, 32, 1) 60%);
     }
+
     80% {
-        background: rgb(182, 40, 222);
-        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 25%, rgba(4, 18, 32, 1) 80%);
+        background: rgb(86, 0, 134);
+        background: linear-gradient(90deg, rgba(86, 0, 134, 1) 25%, rgba(4, 18, 32, 1) 80%);
     }
+
     100% {
-        background: rgb(182, 40, 222);
-        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 30%, rgba(4, 18, 32, 1) 100%);
+        background: rgb(86, 0, 134);
+        background: linear-gradient(90deg, rgba(86, 0, 134, 1) 30%, rgba(4, 18, 32, 1) 100%);
     }
 }
+
 @keyframes slideOutColor {
     0% {
-        background: rgb(182, 40, 222);
-        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 25%, rgba(4, 18, 32, 1) 80%);
+        color: rgb(86, 0, 134);
+        background: rgb(86, 0, 134);
+        background: linear-gradient(90deg, rgb(86, 0, 134) 25%, rgba(4, 18, 32, 1) 80%);
     }
+
     20% {
-        
-        background: rgb(182, 40, 222);
-        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 30%, rgba(4, 18, 32, 1) 100%);
+
+        background: rgb(86, 0, 134);
+        background: linear-gradient(90deg, rgba(86, 0, 134, 1) 30%, rgba(4, 18, 32, 1) 100%);
     }
+
     40% {
-        background: rgb(182, 40, 222);
-        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 20%, rgba(4, 18, 32, 1) 60%);
+        background: rgb(86, 0, 134);
+        background: linear-gradient(90deg, rgba(86, 0, 134, 1) 20%, rgba(4, 18, 32, 1) 60%);
     }
+
     60% {
-        
-        background: rgb(182, 40, 222);
-        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 15%, rgba(4, 18, 32, 1) 40%);
+
+        background: rgb(86, 0, 134);
+        background: linear-gradient(90deg, rgba(86, 0, 134, 1) 15%, rgba(4, 18, 32, 1) 40%);
     }
+
     80% {
-        
-        background: rgb(182, 40, 222);
-        background: linear-gradient(90deg, rgba(182, 40, 222, 1) 10%, rgba(4, 18, 32, 1) 20%);
+
+        background: rgb(86, 0, 134);
+        background: linear-gradient(90deg, rgba(86, 0, 134, 1) 10%, rgba(4, 18, 32, 1) 20%);
     }
+
     100% {
-        
-        background:none;
+
+        background: none;
     }
 }
 
@@ -138,21 +153,17 @@
     }
 
     .title-bar {
-        p:first-child {
-
-            font-size: 2rem;
+        p {
+            font-size: 1.5rem;
         }
 
         .contact-icons {
-            position: absolute;
-
+            position: absolute;     
             right: 10px;
-
         }
     }
 
     .date-item:nth-of-type(1) {
-
         animation: move .5s;
     }
 
@@ -255,7 +266,7 @@
         overflow: hidden;
     }
 
-    .title-bar:first-child {
+    .title-bar:nth-child(2) {
         font-size: 1.5rem;
 
     }
