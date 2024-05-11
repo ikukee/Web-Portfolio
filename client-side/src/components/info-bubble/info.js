@@ -29,21 +29,7 @@ export const Info = () => {
 
       <p class="info-name" ><span>ROMEO</span> <span>PANIS II</span></p>
       <p class="desc">Continous Learning and Continous Development</p>
-      <h3>CONTACT:</h3>
-      <div class="contact-icons">
-        <div onClick={(e) => window.open("https://linkedin.com/in/romeo-panis-ii", '_blank').focus()}>
-          <p class="cont"><i class="fa fa-linkedin"></i></p>
-        </div>
-        <div onClick={(e) => window.open("https://wa.me/639155939354", '_blank').focus()}>
-          <p class="cont"> <i class="fa fa-whatsapp"></i></p>
-        </div>
-        <div onClick={(e) => window.open("https://github.com/ikukee", '_blank').focus()}>
-          <p class="cont"><i class="fa fa-github"></i></p>
-        </div>
-        <div onClick={(e) => window.open("https://mail.google.com/mail/u/0/?fs=1&to=rmpanis2@gmail.com&su=&tf=cm", '_blank').focus()}>
-          <p class="cont"><i class="fa fa-google fa-2xl"></i></p>
-        </div>
-      </div>
+      
       <div class="row">
         <div class="column">
           <h1>Programming Languages</h1>

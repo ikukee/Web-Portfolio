@@ -60,7 +60,7 @@ export const Landing = () => {
   return (<>
 
     <div class="title-bar">
-      <img src={meoro} class="logo"alt="logo"/> <p>&nbsp;Web Portfolio</p>
+      <img src={meoro} class="logo"alt="logo"/>
       <div class="contact-icons">
         <div onClick={(e) => window.open("https://linkedin.com/in/romeo-panis-ii", '_blank').focus()}>
           <p class="cont"><i class="fa fa-linkedin"></i></p>
