@@ -7,6 +7,7 @@ import { Projects } from '../../components/projects-bubble/projects';
 import { Experience } from '../../components/experience-bubble/experience';
 import 'font-awesome/css/font-awesome.min.css';
 import "../../components/info-bubble/info.css"
+import meoro from "../../assets/Meoro.png"
 export const Landing = () => {
   const [info, showInfo] = useState(true)
   const [projects, showProjects] = useState(false)
@@ -59,8 +60,7 @@ export const Landing = () => {
   return (<>
 
     <div class="title-bar">
-      <p class="title">ROMEO PORTFOLIO</p>
-
+      <img src={meoro} class="logo"alt="logo"/>
       <div class="contact-icons">
         <div onClick={(e) => window.open("https://linkedin.com/in/romeo-panis-ii", '_blank').focus()}>
           <p class="cont"><i class="fa fa-linkedin"></i></p>
