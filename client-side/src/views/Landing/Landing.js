@@ -6,9 +6,7 @@ import { Info } from '../../components/info-bubble/info';
 import { Projects } from '../../components/projects-bubble/projects';
 import { Experience } from '../../components/experience-bubble/experience';
 import 'font-awesome/css/font-awesome.min.css';
-import "../../components/info-bubble/info.css"
-import meoro from "../../assets/Meoro.png"
-import svgLogo from '../../utils/svgLogo.js';
+import "../../components/info-bubble/info.css";
 export const Landing = () => {
   const [info, showInfo] = useState(true)
   const [projects, showProjects] = useState(false)
