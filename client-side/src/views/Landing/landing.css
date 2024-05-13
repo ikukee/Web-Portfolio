@@ -158,7 +158,7 @@
         }
 
         .contact-icons {
-            position: absolute;     
+            position: absolute;
             right: 10px;
         }
     }
@@ -453,5 +453,38 @@
         filter: blur(0);
         visibility: visible;
         transform: translateY(0);
+    }
+}
+
+
+/* SVGS */
+svg path {
+    stroke-dashoffset: 210;
+    stroke-dasharray: 210;
+    animation: draw 2s forwards;
+}
+
+svg g {
+    stroke: purple;
+    fill-opacity: 0;
+    animation: fillIn 2s 2s forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+        stroke-width: 2;
+
+    }
+}
+
+@keyframes fillIn {
+    from {
+        fill: purple;
+    }
+
+    to {
+        fill-opacity: 1;
+        stroke: white;
     }
 }
